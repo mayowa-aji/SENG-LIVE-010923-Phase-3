@@ -89,17 +89,30 @@ pet_name = "Rose"
     # pet_birthday(10) => "Happy Birthday! Your pet is now 11."
     # pet_birthday("oops") => "Type Error Occurred"
 
-def pet_birthday(age):
-    try:
-        print(f"Happy Birthday! Your pet is now {age + 1}")
-    except TypeError:
-        print("Type Error Occurred1!")
-    except NameError:
-        print("Name Error Occurred!")
+# def pet_birthday(age):
+#     try:
+#         print(f"Happy Birthday! Your pet is now {age + 1}")
+#     except TypeError:
+#         print("Type Error Occurred1!")
+#     except NameError:
+#         print("Name Error Occurred!")
 
-# pet_birthday("11")
-# pet_birthday(11)
-pet_birthday()
+# # pet_birthday("11")
+# # pet_birthday(11)
+# pet_birthday()
+
+
+def test_data_type(arg):
+    if isinstance(arg, str):
+        print("Argument is a String")
+    if isinstance(arg, int):
+        print("Argument is an Integer")
+    if isinstance(arg, float):
+        print("Argument is a Float")
+
+test_data_type("Test")
+test_data_type(0)
+test_data_type(0.1)
 
     # Note => To view more common Python exceptions, visit https://docs.python.org/3/library/exceptions.html
 
